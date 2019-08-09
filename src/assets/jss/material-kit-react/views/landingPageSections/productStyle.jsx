@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import { title } from "assets/jss/material-kit-react.jsx";
+import { title } from "../../../material-kit-react.jsx";
 
 const productStyle = {
   section: {

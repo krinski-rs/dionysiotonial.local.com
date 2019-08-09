@@ -15,8 +15,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import { cardTitle, title } from "assets/jss/material-kit-react.jsx";
-import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
+import { cardTitle, title } from "../../../material-kit-react.jsx";
+import imagesStyle from "../../imagesStyles.jsx";
 
 const teamStyle = {
   section: {
