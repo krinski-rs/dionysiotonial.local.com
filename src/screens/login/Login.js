@@ -22,7 +22,7 @@ import CardHeader from "../../components/Card/CardHeader.jsx";
 import CardFooter from "../../components/Card/CardFooter.jsx";
 import CustomInput from "../../components/CustomInput/CustomInput.jsx";
 
-import loginPageStyle from "../../assets/jss/material-kit-react/views/loginPage.jsx";
+import style from "../../assets/jss/screens/login/style";
 
 //import image from "../../assets/img/bg7.jpg";
 
@@ -173,4 +173,4 @@ Login.propTypes = {
 	classes: PropTypes.object
 };
 
-export default withStyles(loginPageStyle)(Login);
+export default withStyles(style)(Login);
