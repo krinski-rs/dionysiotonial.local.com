@@ -80,7 +80,7 @@ class Home extends React.Component
 }
 
 Home.propTypes = {
-classes: PropTypes.object
+	classes: PropTypes.object
 };
 
 export default withStyles(landingPageStyle)(Home);
