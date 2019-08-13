@@ -20,7 +20,7 @@ import Card from "../../components/card/Card";
 import CardBody from "../../components/card/CardBody";
 import CardHeader from "../../components/card/CardHeader";
 import CardFooter from "../../components/card/CardFooter";
-import CustomInput from "../../components/CustomInput/CustomInput.jsx";
+import CustomInput from "../../components/input/CustomInput";
 
 import style from "../../assets/jss/screens/login/style";
 

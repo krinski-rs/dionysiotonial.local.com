@@ -12,7 +12,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import { Apps, CloudDownload } from "@material-ui/icons";
 
 // core components
-import CustomDropdown from "../../components/CustomDropdown/CustomDropdown.jsx";
+import CustomDropdown from "../../components/dropdown/CustomDropdown";
 import Button from "../../components/button/Button";
 
 import style from "../../assets/jss/components/header/linkStyle";

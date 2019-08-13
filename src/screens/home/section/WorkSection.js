@@ -9,7 +9,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import GridContainer from "../../../components/grid/GridContainer";
 import GridItem from "../../../components/grid/GridItem";
-import CustomInput from "../../../components/CustomInput/CustomInput.jsx";
+import CustomInput from "../../../components/input/CustomInput";
 import Button from "../../../components/button/Button";
 
 import style from "../../../assets/jss/screens/home/work/style";

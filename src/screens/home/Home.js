@@ -12,7 +12,7 @@ import Footer from "../../components/footer/Footer";
 import GridContainer from "../../components/grid/GridContainer";
 import GridItem from "../../components/grid/GridItem";
 import Button from "../../components/button/Button";
-import Parallax from "../../components/Parallax/Parallax.jsx";
+import Parallax from "../../components/parallax/Parallax";
 
 import style from "../../assets/jss/screens/home/style";
 
