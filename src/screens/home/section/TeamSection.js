@@ -11,10 +11,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import GridContainer from "../../../components/grid/GridContainer";
 import GridItem from "../../../components/grid/GridItem";
-import Button from "../../../components/CustomButtons/Button.jsx";
-import Card from "../../../components/Card/Card.jsx";
-import CardBody from "../../../components/Card/CardBody.jsx";
-import CardFooter from "../../../components/Card/CardFooter.jsx";
+import Button from "../../../components/button/Button";
+import Card from "../../../components/card/Card";
+import CardBody from "../../../components/card/CardBody";
+import CardFooter from "../../../components/card/CardFooter";
 
 //import teamStyle from "../../../assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 import style from "../../../assets/jss/screens/home/team/style";

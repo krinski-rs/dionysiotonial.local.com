@@ -33,7 +33,7 @@ import Icon from "@material-ui/core/Icon";
 import Popper from "@material-ui/core/Popper";
 
 // core components
-import Button from "../../components/CustomButtons/Button.jsx";
+import Button from "../../components/button/Button";
 
 import customDropdownStyle from "../../assets/jss/material-kit-react/components/customDropdownStyle.jsx";
 

@@ -15,11 +15,11 @@ import HeaderLinks from "../../components/header/HeaderLinks";
 import Footer from "../../components/footer/Footer";
 import GridContainer from "../../components/grid/GridContainer";
 import GridItem from "../../components/grid/GridItem";
-import Button from "../../components/CustomButtons/Button.jsx";
-import Card from "../../components/Card/Card.jsx";
-import CardBody from "../../components/Card/CardBody.jsx";
-import CardHeader from "../../components/Card/CardHeader.jsx";
-import CardFooter from "../../components/Card/CardFooter.jsx";
+import Button from "../../components/button/Button";
+import Card from "../../components/card/Card";
+import CardBody from "../../components/card/CardBody";
+import CardHeader from "../../components/card/CardHeader";
+import CardFooter from "../../components/card/CardFooter";
 import CustomInput from "../../components/CustomInput/CustomInput.jsx";
 
 import style from "../../assets/jss/screens/login/style";
