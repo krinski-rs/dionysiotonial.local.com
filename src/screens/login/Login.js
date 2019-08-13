@@ -10,11 +10,11 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 
-import Header from "../../components/Header/Header.jsx";
-import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
-import GridContainer from "../../components/Grid/GridContainer.jsx";
-import GridItem from "../../components/Grid/GridItem.jsx";
+import Header from "../../components/header/Header";
+import HeaderLinks from "../../components/header/HeaderLinks";
+import Footer from "../../components/footer/Footer";
+import GridContainer from "../../components/grid/GridContainer";
+import GridItem from "../../components/grid/GridItem";
 import Button from "../../components/CustomButtons/Button.jsx";
 import Card from "../../components/Card/Card.jsx";
 import CardBody from "../../components/Card/CardBody.jsx";

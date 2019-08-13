@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
@@ -26,14 +9,15 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // core components
-import GridContainer from "../../../components/Grid/GridContainer.jsx";
-import GridItem from "../../../components/Grid/GridItem.jsx";
+import GridContainer from "../../../components/grid/GridContainer";
+import GridItem from "../../../components/grid/GridItem";
 import Button from "../../../components/CustomButtons/Button.jsx";
 import Card from "../../../components/Card/Card.jsx";
 import CardBody from "../../../components/Card/CardBody.jsx";
 import CardFooter from "../../../components/Card/CardFooter.jsx";
 
-import teamStyle from "../../../assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
+//import teamStyle from "../../../assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
+import style from "../../../assets/jss/screens/home/team/style";
 
 import team1 from "../../../assets/img/faces/avatar.jpg";
 import team2 from "../../../assets/img/faces/christian.jpg";
@@ -185,4 +169,4 @@ TeamSection.propTypes = {
   classes: PropTypes.object
 };
 
-export default withStyles(teamStyle)(TeamSection);
+export default withStyles(style)(TeamSection);

@@ -6,19 +6,19 @@ import classNames from "classnames";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 
-import Header from "../../components/Header/Header.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
-import GridContainer from "../../components/Grid/GridContainer.jsx";
-import GridItem from "../../components/Grid/GridItem.jsx";
+import Header from "../../components/header/Header";
+import HeaderLinks from "../../components/header/HeaderLinks";
+import Footer from "../../components/footer/Footer";
+import GridContainer from "../../components/grid/GridContainer";
+import GridItem from "../../components/grid/GridItem";
 import Button from "../../components/CustomButtons/Button.jsx";
-import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
 
-import landingPageStyle from "../../assets/jss/material-kit-react/views/landingPage.jsx";
+import style from "../../assets/jss/screens/home/style";
 
-import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
+import ProductSection from "./section/ProductSection";
+import TeamSection from "./section/TeamSection";
+import WorkSection from "./section/WorkSection";
 
 const dashboardRoutes = [];
 
@@ -83,4 +83,4 @@ Home.propTypes = {
 	classes: PropTypes.object
 };
 
-export default withStyles(landingPageStyle)(Home);
+export default withStyles(style)(Home);

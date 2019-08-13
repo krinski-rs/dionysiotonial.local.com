@@ -29,7 +29,7 @@ import {
   dangerBoxShadow,
   roseColor,
   roseBoxShadow
-} from "../../material-kit-react.jsx";
+} from "../../constants";
 
 const customDropdownStyle = theme => ({
   popperClose: {
