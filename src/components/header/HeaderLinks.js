@@ -9,7 +9,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { History, CallSplit, RecentActors, EventAvailable, Terrain } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "../../components/dropdown/CustomDropdown";
@@ -24,24 +24,50 @@ function HeaderLinks({ ...props }) {
 			<ListItem className={classes.listItem}>
 				<CustomDropdown
 					noLiPadding
-					buttonText="Components"
+					buttonText="Ramos"
 					buttonProps={{
 						className: classes.navLink,
 						color: "transparent"
 					}}
-					buttonIcon={Apps}
+					buttonIcon={CallSplit}
 					dropdownList={[
-						<Link to="/" className={classes.dropdownLink}>
-							All components
+						<Link to="/ramos/lobo" className={classes.dropdownLink}>
+							Lobinho
 						</Link>,
-						<a
-							href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-							target="_blank"
-							className={classes.dropdownLink}
-							rel="noopener noreferrer"
-						>
-							Documentation
-						</a>
+						<Link to="/ramos/escoteiro" className={classes.dropdownLink}>
+							Escoteiro
+						</Link>,
+						<Link to="/ramos/senior" className={classes.dropdownLink}>
+							Sênior
+						</Link>,
+						<Link to="/ramos/pioneiro" className={classes.dropdownLink}>
+							Pioneiro
+						</Link>
+					]}
+				/>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<CustomDropdown
+					noLiPadding
+					buttonText="História"
+					buttonProps={{
+						className: classes.navLink,
+						color: "transparent"
+					}}
+					buttonIcon={History}
+					dropdownList={[
+						<Link to="/historia/badenpowell" className={classes.dropdownLink}>
+							Baden-Powell
+						</Link>,
+						<Link to="/historia/dionysiotonial" className={classes.dropdownLink}>
+							Dionysio Tonial
+						</Link>,
+						<Link to="/historia/viamao" className={classes.dropdownLink}>
+							Viamão
+						</Link>,
+						<Link to="/historia/marista" className={classes.dropdownLink}>
+							Marista
+						</Link>,
 					]}
 				/>
 			</ListItem>
@@ -52,13 +78,33 @@ function HeaderLinks({ ...props }) {
 					target="_blank"
 					className={classes.navLink}
 				>
-					<CloudDownload className={classes.icons} /> Download
+					<Terrain className={classes.icons} />&nbsp;Escotismo
+				</Button>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Button
+					href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+					color="transparent"
+					target="_blank"
+					className={classes.navLink}
+				>
+					<EventAvailable className={classes.icons} />&nbsp;Calendário
+				</Button>
+			</ListItem>
+			<ListItem className={classes.listItem}>
+				<Button
+					href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+					color="transparent"
+					target="_blank"
+					className={classes.navLink}
+				>
+					<RecentActors className={classes.icons} />&nbsp;Blog
 				</Button>
 			</ListItem>
 			<ListItem className={classes.listItem}>
 				<Tooltip
 					id="instagram-twitter"
-					title="Follow us on twitter"
+					title="siga-nos no twitter"
 					placement={window.innerWidth > 959 ? "top" : "left"}
 					classes={{ tooltip: classes.tooltip }}
 				>
@@ -75,7 +121,7 @@ function HeaderLinks({ ...props }) {
 			<ListItem className={classes.listItem}>
 				<Tooltip
 					id="instagram-facebook"
-					title="Follow us on facebook"
+					title="siga-nos no facebook"
 					placement={window.innerWidth > 959 ? "top" : "left"}
 					classes={{ tooltip: classes.tooltip }}
 				>
@@ -92,7 +138,7 @@ function HeaderLinks({ ...props }) {
 			<ListItem className={classes.listItem}>
 				<Tooltip
 					id="instagram-tooltip"
-					title="Follow us on instagram"
+					title="siga-nos no instagram"
 					placement={window.innerWidth > 959 ? "top" : "left"}
 					classes={{ tooltip: classes.tooltip }}
 				>
