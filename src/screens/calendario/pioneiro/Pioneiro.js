@@ -27,7 +27,7 @@ import work3 from "../../../assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "../../../assets/img/examples/mariya-georgieva.jpg";
 import work5 from "../../../assets/img/examples/clem-onojegaw.jpg";
 
-class Escoteiro extends React.Component
+class Pioneiro extends React.Component
 {
 	render() {
 		const { classes, ...rest } = this.props;
@@ -38,7 +38,7 @@ class Escoteiro extends React.Component
 		);
 		const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 		return (
-			<React.Fragment>
+			<div>
 				<Header
 					color="transparent"
 					brand="G.E.M.I.D.T."
@@ -58,11 +58,11 @@ class Escoteiro extends React.Component
 		                <GridItem xs={12} sm={12} md={6}>
 		                  <div className={classes.profile}>
 		                    <div>
-		                      <img src={"/logo_ramo_escoteiro.png"} alt="..." className={imageClasses} />
+		                      <img src={"/logo_ramo_pioneiro.png"} alt="..." className={imageClasses} />
 		                    </div>
 		                    <div className={classes.name}>
-		                      <h3 className={classes.title}>Ramo Escoteiro</h3>
-		                      <h6>11 anos a 14 anos</h6>
+		                      <h3 className={classes.title}>Ramo Pioneiro</h3>
+		                      <h6>18 anos a 21 anos</h6>
 		                      <Button justIcon link className={classes.margin5}>
 		                        <i className={"fab fa-twitter"} />
 		                      </Button>
@@ -78,27 +78,24 @@ class Escoteiro extends React.Component
 		              </GridContainer>
 		              <div className={classes.description}>
 		                <p>
-							Entre os 11 e 14 anos, fazemos parte do Ramo Escoteiro – somos patrulhas de 5 a 8 
-							jovens, de meninos e meninas, que juntas formam uma tropa. Aqui, além de trabalhar 
-							em equipe e entender a importância de respeitar a natureza, aprendemos diversas 
-							coisas que nos deixam mais confiantes e decididos.
+							A partir dos 18 anos, e até os 21 incompletos, integramos o Ramo Pioneiro. 
+							Nossa equipe forma o clã, e é onde nos apoiamos e descobrimos interesses em comum. 
+							Levamos a sério nosso lema “Servir”, já que vivemos uma aventura que não é mais 
+							simbólica ou imaginária, pois experimentamos o papel real do adulto por meio 
+							do serviço e das atividades de desenvolvimento comunitário.
 						</p>
 						<p>
-							Cada patrulha tem seu próprio bastão e bandeirola, onde gravamos lembranças 
-							marcantes de nossa experiência juntos, assim como o livro de patrulha, que tem 
-							todas as informações sobre os membros e fotografias das nossas ações. Elegemos 
-							um monitor, que age como um líder dentro de nosso grupo, e desenvolvemos algumas 
-							atividades por conta própria, como ir ao cinema, jogar algum jogo, etc.
+							O cotidiano no clã nos dá bastante liberdade, mas já estamos cientes da 
+							responsabilidade que isso traz – somos nós que organizamos nossas próprias 
+							atividades. Esse é o período em que entramos na vida adulta, e estamos concluindo 
+							a formação de nossos valores e princípios.
 						</p>
 						<p>
-							Atividades como acampamentos e excursões fazem parte da nossa vivência no Ramo 
-							Escoteiro, sempre com o acompanhamento de adultos. Com nosso lema “Sempre Alerta”, 
-							estamos interessados em descobrir coisas novas e estar cercados de amigos.
-						</p>
-						<p>
-							Antes de completar 15 anos, passamos por um período de transição em que nos 
-							adaptamos à realidade do Ramo Sênior, e nos despedimos da tropa escoteira com a 
-							Cerimônia de Passagem.
+							Mesmo estando no clã, já podemos participar como adultos voluntários em outros 
+							Ramos atuar ativamente em nossas comunidades. Prestes a completar 21 anos, é 
+							chegada a hora de encerrar nossa caminhada como jovem no Movimento Escoteiro. 
+							A Cerimônia de Partida marca essa etapa, que pode ser seguida pela vida escoteira 
+							no papel de voluntário, como escotista ou dirigente.
 		                </p>
 		              </div>
 		              <GridContainer justify="center">
@@ -220,13 +217,14 @@ class Escoteiro extends React.Component
 		            </div>
 		          </div>
 		        </div>
+
 				<Footer />
-			</React.Fragment>
+			</div>
 		);
 	}
 }
 
-Escoteiro.propTypes = {
+Pioneiro.propTypes = {
 	classes: PropTypes.object
 };
-export default withStyles(style)(Escoteiro);
+export default withStyles(style)(Pioneiro);

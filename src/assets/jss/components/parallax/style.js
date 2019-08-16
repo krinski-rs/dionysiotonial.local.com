@@ -29,6 +29,9 @@ const style = {
 	},
 	small: {
 		height: "380px"
+	},
+	little: {
+		height: "190px"
 	}
 };
 

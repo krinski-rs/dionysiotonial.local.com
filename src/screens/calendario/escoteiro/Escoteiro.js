@@ -38,7 +38,7 @@ class Escoteiro extends React.Component
 		);
 		const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 		return (
-			<React.Fragment>
+			<div>
 				<Header
 					color="transparent"
 					brand="G.E.M.I.D.T."
@@ -220,8 +220,9 @@ class Escoteiro extends React.Component
 		            </div>
 		          </div>
 		        </div>
+
 				<Footer />
-			</React.Fragment>
+			</div>
 		);
 	}
 }

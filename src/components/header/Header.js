@@ -52,6 +52,11 @@ class Header extends React.Component
 		window.removeEventListener("scroll", this.headerColorChange);
 		}
 	}
+
+	handleClickHome = () => {
+        this.props.history.push("/home");
+    }
+
 	render() {
 		const {
 			classes,
@@ -69,7 +74,7 @@ class Header extends React.Component
 			[classes.fixed]: fixed
 		});
 //		const brandComponent = <Button className={classes.title}><Link to="/home" style={{color:"white"}}>{brand}</Link></Button>;
-		const brandComponent = <Button className={classes.title}>{brand}</Button>;
+		const brandComponent = <Button onClick={this.handleClickHome} className={classes.title}>{brand}</Button>;
 		return (
 			<AppBar className={appBarClasses}>
 				<Toolbar className={classes.container}>

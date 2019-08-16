@@ -16,7 +16,6 @@ import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 
 import style from "../../../assets/jss/screens/ramos/style";
-import profile from "../../../assets/img/faces/christian.jpg";
 import studio1 from "../../../assets/img/examples/studio-1.jpg";
 import studio2 from "../../../assets/img/examples/studio-2.jpg";
 import studio3 from "../../../assets/img/examples/studio-3.jpg";
@@ -39,7 +38,7 @@ class Lobo extends React.Component
 		);
 		const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 		return (
-			<div>
+			<React.Fragment>
 				<Header
 					color="transparent"
 					brand="G.E.M.I.D.T."
@@ -79,13 +78,40 @@ class Lobo extends React.Component
 		              </GridContainer>
 		              <div className={classes.description}>
 		                <p>
-		                	Entre os 6,5 e os 10 anos, somos lobinhos. Aprendemos muito sobre a vida em meio à natureza, 
-		                	a viver em grupo e desenvolvemos nossa liderança. “O livro da Jângal”, que retrata as 
-		                	aventuras de Mowgli, o menino lobo, é o que inspira a organização do Ramo Lobinho – juntos, 
-		                	formamos uma alcateia, que é dividida em pequenos grupos chamados matilhas.
-		                	
-		                	Cada matilha tem de quatro a seis lobinhos, entre meninos e meninas, e esse grupo nos acompanha 
-		                	durante todo o período em que ficamos nesse Ramo.
+						Especialmente concebido para atender às necessidades de desenvolvimento das crianças 
+						de ambos os sexos na faixa etária compreendida entre 7 e 10 anos, o programa educativo 
+						aplicado ao Ramo Lobinho concentra a sua ênfase no processo de socialização da criança, 
+						preparando-a para que, ao atingir a idade e as condições necessárias, prossiga a sua 
+						formação no ramo escoteiro.
+						<br />
+						O Lobismo é inspirado no "Livro da Jangal", de Rudyard Kipling, resumido em "Mowgli, o 
+						menino-lobo".
+						<br />
+						A seção do grupo escoteiro que congrega os lobinhos é denominada alcatéia (de Lobinhos, 
+						Lobinhas ou Mista).
+						</p>
+						<p>
+						O chefe é chamado de Akelá pelas crianças e seus assistentes são chamados Baloo, 
+						Baguera, Kaa, Chill ou outros nomes constantes do "Livro da Jângal". A escolha dos 
+						nomes dos assistentes é feita em geral pelas crianças.
+						<br />
+						A Alcatéia é dividida em unidades denominadas Matilhas, cada uma com 4 a 6 crianças, 
+						as quais constituem as equipes de trabalho e de jogos, sem atingir contudo, o grau de 
+						estratificação e de desenvolvimento recomendado para o sistema de patrulhas, adotado 
+						nos ramos Escoteiro e Sênior.
+						</p>
+						<p>
+						Uma Alcatéia completa deve contar com 4 Matilhas. O lobo é o animal símbolo de todas 
+						as Matilhas, que se distinguem numa mesma Alcatéia pelas cores próprias dos lobos. A 
+						Matilha é liderada por um Lobinho ou Lobinha denominado Primo, auxiliado por outro 
+						denominado Segundo.
+						<br />
+						Os Primos e Segundos são designados pelo Akelá, mas cada Primo deve ser consultado 
+						antes da designação do seu Segundo.
+						<br />
+						Antes de completar 11 anos, o Lobinho deve deixar a Alcatéia e ser transferido para a 
+						Tropa do Ramo Escoteiro, em uma adequada cerimônia de passagem. Se o Grupo não possui 
+						essa espécie de seção, a criança deve ser encaminhada a outro Grupo que a possua.
 		                </p>
 		              </div>
 		              <GridContainer justify="center">
@@ -207,9 +233,8 @@ class Lobo extends React.Component
 		            </div>
 		          </div>
 		        </div>
-
 				<Footer />
-			</div>
+			</React.Fragment>
 		);
 	}
 }

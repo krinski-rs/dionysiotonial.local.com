@@ -8,7 +8,7 @@ import GridContainer from "../../../components/grid/GridContainer";
 import GridItem from "../../../components/grid/GridItem";
 import InfoArea from "../../../components/infoarea/InfoArea";
 
-import style from "../../../assets/jss/screens/home/product/style";
+import style from "../../../assets/jss/screens/home/ramos/style";
 
 class Ramos extends React.Component {
 	render() {

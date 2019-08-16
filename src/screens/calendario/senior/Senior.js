@@ -27,7 +27,7 @@ import work3 from "../../../assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "../../../assets/img/examples/mariya-georgieva.jpg";
 import work5 from "../../../assets/img/examples/clem-onojegaw.jpg";
 
-class Escoteiro extends React.Component
+class Senior extends React.Component
 {
 	render() {
 		const { classes, ...rest } = this.props;
@@ -38,7 +38,7 @@ class Escoteiro extends React.Component
 		);
 		const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 		return (
-			<React.Fragment>
+			<div>
 				<Header
 					color="transparent"
 					brand="G.E.M.I.D.T."
@@ -58,11 +58,11 @@ class Escoteiro extends React.Component
 		                <GridItem xs={12} sm={12} md={6}>
 		                  <div className={classes.profile}>
 		                    <div>
-		                      <img src={"/logo_ramo_escoteiro.png"} alt="..." className={imageClasses} />
+		                      <img src={"/logo_ramo_senior.png"} alt="..." className={imageClasses} />
 		                    </div>
 		                    <div className={classes.name}>
-		                      <h3 className={classes.title}>Ramo Escoteiro</h3>
-		                      <h6>11 anos a 14 anos</h6>
+		                      <h3 className={classes.title}>Ramo Sênior</h3>
+		                      <h6>15 anos a 17 anos</h6>
 		                      <Button justIcon link className={classes.margin5}>
 		                        <i className={"fab fa-twitter"} />
 		                      </Button>
@@ -78,27 +78,25 @@ class Escoteiro extends React.Component
 		              </GridContainer>
 		              <div className={classes.description}>
 		                <p>
-							Entre os 11 e 14 anos, fazemos parte do Ramo Escoteiro – somos patrulhas de 5 a 8 
-							jovens, de meninos e meninas, que juntas formam uma tropa. Aqui, além de trabalhar 
-							em equipe e entender a importância de respeitar a natureza, aprendemos diversas 
-							coisas que nos deixam mais confiantes e decididos.
+							O Ramo Sênior é formado por jovens com idades entre 15 e 17 anos, e nos incentiva a 
+							superar nossos próprios desafios! Nós já nos conhecemos melhor, aceitamos nossas 
+							características e as diferenças de um jeito mais simples, e estamos entendendo melhor 
+							nossa própria personalidade.
 						</p>
 						<p>
-							Cada patrulha tem seu próprio bastão e bandeirola, onde gravamos lembranças 
-							marcantes de nossa experiência juntos, assim como o livro de patrulha, que tem 
-							todas as informações sobre os membros e fotografias das nossas ações. Elegemos 
-							um monitor, que age como um líder dentro de nosso grupo, e desenvolvemos algumas 
-							atividades por conta própria, como ir ao cinema, jogar algum jogo, etc.
+							Com a tropa sênior vivemos verdadeiras aventuras: fazemos rapel, navegamos, 
+							acampamos por vários dias, fazemos trilhas e escaladas, aprendemos jogos e 
+							atividades mais desafiadoras e somos incentivados a superar obstáculos.
 						</p>
 						<p>
-							Atividades como acampamentos e excursões fazem parte da nossa vivência no Ramo 
-							Escoteiro, sempre com o acompanhamento de adultos. Com nosso lema “Sempre Alerta”, 
-							estamos interessados em descobrir coisas novas e estar cercados de amigos.
+							Como diz nosso lema, estamos Sempre Alerta a tudo que acontece ao nosso redor. 
+							Temos nosso próprio livro de patrulha, onde registramos informações importantes 
+							e recordações das nossas atividades.
 						</p>
 						<p>
-							Antes de completar 15 anos, passamos por um período de transição em que nos 
-							adaptamos à realidade do Ramo Sênior, e nos despedimos da tropa escoteira com a 
-							Cerimônia de Passagem.
+							A partir do momento que completamos 17 anos, e no máximo antes dos 18, precisamos 
+							nos despedir da tropa sênior e partir para o Ramo Pioneiro, após uma Cerimônia 
+							de Passagem.
 		                </p>
 		              </div>
 		              <GridContainer justify="center">
@@ -220,13 +218,14 @@ class Escoteiro extends React.Component
 		            </div>
 		          </div>
 		        </div>
+
 				<Footer />
-			</React.Fragment>
+			</div>
 		);
 	}
 }
 
-Escoteiro.propTypes = {
+Senior.propTypes = {
 	classes: PropTypes.object
 };
-export default withStyles(style)(Escoteiro);
+export default withStyles(style)(Senior);
