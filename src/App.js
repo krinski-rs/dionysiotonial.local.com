@@ -15,10 +15,10 @@ class App extends Component {
 		return (
 			<Router history={hist}>
 				<Switch>
-			      <Route exact={true} path="/home" component={Home} />
 			      <Route path="/ramos" component={Ramos} />
 			      <Route path="/calendario" component={Calendario} />
-			      <Route exact={true} path="/" component={Login} />
+			      <Route exact={true} path="/login" component={Login} />
+			      <Route exact={true} path="/" component={Home} />
 			    </Switch>
 			</Router>
 		);

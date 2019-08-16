@@ -310,7 +310,7 @@ class Lobo extends React.Component
 	}
 	
 	render() {
-		const { classes, ...rest } = this.props;	  
+		const { classes, ...rest } = this.props;
 		return (
 			<div>
 				<Header
@@ -319,13 +319,13 @@ class Lobo extends React.Component
 					rightLinks={<HeaderLinks />}
 					fixed
 					changeColorOnScroll={{
-						height: 200,
+						height: 60,
 						color: "white"
 					}}
 					{...rest}
 				/>
 				<Parallax little filter image={require("../../../assets/img/profile-bg.jpg")} />
-		        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised)}>
 						<Scheduler data={this.state.data} locale={'pt-BR'}>
 							<ViewState currentDate="2018-06-28" />
 							<WeekView startDayHour={ 0 } endDayHour={24} firstDayOfWeek={1} />
