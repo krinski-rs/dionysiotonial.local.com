@@ -16,9 +16,7 @@ import Parallax from "../../components/parallax/Parallax";
 
 import style from "../../assets/jss/screens/home/style";
 
-import ProductSection from "./section/ProductSection";
-import TeamSection from "./section/TeamSection";
-import WorkSection from "./section/WorkSection";
+import Ramos from "./secoes/Ramos";
 
 const dashboardRoutes = [];
 
@@ -44,12 +42,11 @@ class Home extends React.Component
 					<div className={classes.container}>
 						<GridContainer>
 							<GridItem xs={12} sm={12} md={6}>
-								<h1 className={classes.title}>Your Story Starts With Us.</h1>
+								<h1 className={classes.title}>Grupo Escoteiro Irmão Dionysio Tonial</h1>
 								<h4>
-									Every landing page needs a small description after the big
-									bold title, that{"'"}s why we added this text here. Add here
-									all the information that can make you or your product create
-									the first impression.
+									Fundado em 1º de junho de 2002, o Grupo Escoteiro Marista Irmão Dionysio Tonial, 
+									tem sua sede localizada nas dependencias do Instituto Marista Graças, 
+									no município de Viamão.
 								</h4>
 								<br />
 								<Button
@@ -68,9 +65,7 @@ class Home extends React.Component
 				</Parallax>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
-						<ProductSection />
-						<TeamSection />
-						<WorkSection />
+						<Ramos />
 					</div>
 				</div>
 				<Footer />

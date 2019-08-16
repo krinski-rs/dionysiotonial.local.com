@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import SvgIcon from '@material-ui/core/SvgIcon';
 
 //import infoStyle from "../../assets/jss/material-kit-react/components/infoStyle.jsx";
 import style from "../../assets/jss/components/infoarea/style";
@@ -23,7 +24,9 @@ function InfoArea({ ...props }) {
 	return (
 		<div className={classes.infoArea}>
 			<div className={iconWrapper}>
-				<props.icon className={iconClasses} />
+				<SvgIcon className={iconClasses}>
+					<path d={props.svgPath} />
+				</SvgIcon>
 			</div>
 			<div className={classes.descriptionWrapper}>
 				<h4 className={classes.title}>{title}</h4>
@@ -39,7 +42,7 @@ InfoArea.defaultProps = {
 
 InfoArea.propTypes = {
 	classes: PropTypes.object.isRequired,
-	icon: PropTypes.object.isRequired,
+	svgPath: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 	iconColor: PropTypes.oneOf([
