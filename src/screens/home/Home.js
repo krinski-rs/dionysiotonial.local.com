@@ -17,6 +17,7 @@ import Parallax from "../../components/parallax/Parallax";
 import style from "../../assets/jss/screens/home/style";
 
 import Ramos from "./secoes/Ramos";
+import Contato from "./secoes/Contato";
 
 const dashboardRoutes = [];
 
@@ -66,6 +67,7 @@ class Home extends React.Component
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div className={classes.container}>
 						<Ramos />
+						<Contato />
 					</div>
 				</div>
 				<Footer />

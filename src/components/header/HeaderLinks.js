@@ -73,9 +73,8 @@ function HeaderLinks({ ...props }) {
 			</ListItem>
 			<ListItem className={classes.listItem}>
 				<Button
-					href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+					href="/escotismo"
 					color="transparent"
-					target="_blank"
 					className={classes.navLink}
 				>
 					<Terrain className={classes.icons} />&nbsp;Escotismo
@@ -92,9 +91,8 @@ function HeaderLinks({ ...props }) {
 			</ListItem>
 			<ListItem className={classes.listItem}>
 				<Button
-					href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+					href="/blog"
 					color="transparent"
-					target="_blank"
 					className={classes.navLink}
 				>
 					<RecentActors className={classes.icons} />&nbsp;Blog
