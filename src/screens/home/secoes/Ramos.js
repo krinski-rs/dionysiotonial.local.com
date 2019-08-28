@@ -1,9 +1,6 @@
 import React from "react";
-// nodejs library to set properties for components
 import PropTypes from "prop-types";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// core components
 import GridContainer from "../../../components/grid/GridContainer";
 import GridItem from "../../../components/grid/GridItem";
 import InfoArea from "../../../components/infoarea/InfoArea";
