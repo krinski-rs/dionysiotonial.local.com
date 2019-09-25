@@ -15,8 +15,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import { container, title } from "assets/jss/material-kit-react.jsx";
-import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+import { container, title } from "../../../../../assets/jss/constants";
+import style from "../../../../../assets/jss/components/header/linkStyle";
 
 const navbarsStyle = theme => ({
   section: {
@@ -57,7 +57,7 @@ const navbarsStyle = theme => ({
     height: "20px",
     color: "inherit"
   },
-  ...headerLinksStyle(theme),
+  ...style(theme),
   img: {
     width: "40px",
     height: "40px",

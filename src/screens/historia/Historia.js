@@ -4,22 +4,22 @@ import {
 	Route,
 } from "react-router-dom";
 import BadenPowell from "./secoes/BadenPowell";
-import DionysioTonial from "./secoes/DionysioTonial";
-import Viamao from "./secoes/Viamao";
+import Dionysiotonial from "./secoes/DionysioTonial";
 import Marista from "./secoes/Marista";
+import Viamao from "./secoes/Viamao";
 
-class Historia extends Component
+class Ramos extends Component
 {
 	render() {
 		return (
 			<Switch>
 				<Route exact={true} path={this.props.match.path+"/badenpowell"} component={BadenPowell} />
-				<Route exact={true} path={this.props.match.path+"/dionysiotonial"} component={DionysioTonial} />
-				<Route exact={true} path={this.props.match.path+"/viamao"} component={Viamao} />
+				<Route exact={true} path={this.props.match.path+"/dionysioTonial"} component={Dionysiotonial} />
 				<Route exact={true} path={this.props.match.path+"/marista"} component={Marista} />
+				<Route exact={true} path={this.props.match.path+"/viamao"} component={Viamao} />
 			</Switch>
 		);
 	}
 }
 
-export default Historia;
+export default Ramos;

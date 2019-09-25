@@ -59,7 +59,7 @@ class Login extends React.Component
 				<div
 					className={classes.pageHeader}
 					style={{
-						backgroundImage: "url(/lenco_dionysio.jpg)",
+						backgroundImage: "url(/images/lenco_dionysio.jpg)",
 						backgroundSize: "cover",
 						backgroundPosition: "top center"
 					}}
